@@ -1,9 +1,11 @@
-import React from 'react'
+'use client';
+import Work from '@/components/Work';
+import React, { forwardRef } from 'react';
 
-const Page = () => {
+const Page = forwardRef((props,ref) => {
   return (
-    <div>work page</div>
-  )
-}
+    <Work ref={ref}/>
+  );
+});
 
-export default Page
+export default Page;
